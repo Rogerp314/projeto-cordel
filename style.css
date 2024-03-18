@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'sriracha';
+    src: url('fontes/Sriracha-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'passion';
+    src: url('fontes/PassionOne-Regular.ttf') format('truetype');
+}
+:root{
+    --font-destaque: 'passion';
+    --font-poesia: 'sriracha';
+}
