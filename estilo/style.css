@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'passionregular';
+    src: url('../fontes/PassionOne-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sriracha';
+    src: url('../fontes/Sriracha-Regular.ttf') format('truetype');
+}
+:root{
+    --font-tirulos: 'passionregular';
+    --font-texto: 'sriracha'
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+header{
+  text-align: center;  
+}
+header h1{
+    font: normal bold 153px var(--font-tirulos);
+}
