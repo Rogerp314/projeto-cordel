@@ -11,14 +11,54 @@
     --font-tirulos: 'passionregular';
     --font-texto: 'sriracha'
 }
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
-body{
-    background-color: black;
-    color: white;
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
 }
 header{
-  text-align: center;  
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 header h1{
-    font: normal bold 153px var(--font-tirulos);
+    font-variant: small-caps;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-color: gray;
+}
+.imagem p{
+    background-color: rgba(0, 0, 0, 0.799);
+    color: white;
+    width: 400px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
