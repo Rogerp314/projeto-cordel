@@ -8,6 +8,7 @@
     src: url('../fontes/Sriracha-Regular.ttf') format('truetype');
 }
 :root{
+    --fonte-padrao: 'Verdana, Geneva, Tahoma, sans-serif';
     --font-titulos: 'passionregular';
     --font-texto: 'sriracha'
 }
@@ -19,17 +20,19 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte-padrao);
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
-    font-family: var(--font-titulos);
     padding-top: 50px;
     padding-bottom: 50px;
 }
 header h1{
     font-variant: small-caps;
+    font-family: var(--font-titulos);
+    font-size: 4em;
 }
 a{
     color: white;
@@ -40,11 +43,12 @@ a:hover{
     text-decoration: underline;
 }
 section{
-    font-family: var(--font-texto);
     padding-left: 30px;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
+    font-family: var(--font-texto);
+    font-size: 2em;
 }
 .normal{
     background-color: white;
@@ -54,13 +58,23 @@ section{
     background-color: gray;
 }
 .imagem p{
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.799);
     color: white;
-    width: 400px;
 }
 footer{
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 510px){
+    header h1{
+        font-size: 2em;
+    }
+    section{
+        font-size: 1.5em;
+    }
 }
